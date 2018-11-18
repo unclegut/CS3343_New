@@ -1,7 +1,7 @@
 package MahJong;
 import java.util.*;
 
-//123
+//123 Changed
 public class Main {
 	public static void main(String[] args) {
 		char pWind, dWind;
