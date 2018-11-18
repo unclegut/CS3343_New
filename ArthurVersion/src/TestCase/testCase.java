@@ -14,6 +14,8 @@ import HandPattern.GreatDragon;
 import HandPattern.GreatWinds;
 import HandPattern.MixSuit;
 import HandPattern.SameSuit;
+import HandPattern.SmallDragon;
+import HandPattern.SmallWinds;
 
 public class testCase {
 
@@ -69,6 +71,24 @@ public class testCase {
 	}
 	
 	@Test
+	public void testSmallDragon() { //小三元
+		Hand hand = new Hand('E','E',new String[]{"r0","r0","r0","g0","g0","g0","_0","_0","d1",
+				"d1","d1","d2","d2","d2"});
+		SmallDragon smallDragon = new SmallDragon();
+		boolean result = smallDragon.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testSmallWinds() { //小四喜
+		Hand hand = new Hand('E','E',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","s0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
 	public void testSameSuit() { //清一色
 		Hand hand = new Hand('E','E',new String[]{"d1","d1","d1","d2","d3","d4","d5","d5","d5",
 				"d6","d7","d8","d9","d9"});
@@ -113,6 +133,7 @@ public class testCase {
 		boolean result = greatWinds.checkPattern(hand);
 		assertEquals(true,result);
 	}
+	
 	
 	
 	
