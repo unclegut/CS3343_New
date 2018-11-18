@@ -80,7 +80,7 @@ public class testCase {
 	}
 	
 	@Test
-	public void testSmallWinds() { //小四喜...
+	public void testSmallWinds() { //小四喜
 		Hand hand = new Hand('E','E',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","s0",
 				"w0","w0","d2","d2","d2"});
 		SmallWinds smallWinds = new SmallWinds();
