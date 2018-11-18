@@ -1,0 +1,11 @@
+Validation
+- Wind
+
+Chicken(Eatable)
+CommonHand
+Contain 1,9
+Only 1,9
+All winds
+
+Igonre:
+SupportChecking (will be deleted soon)
