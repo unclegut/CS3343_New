@@ -51,7 +51,7 @@ public class testCase {
 		assertEquals(true,result);
 	}
 
-	/* test for hand pattern*/
+	/* test for hand pattern*/ 
 	@Test
 	public void testAllInTriplet() { //對對糊
 		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b1","b1","b1","d1","d1","d1",
@@ -80,7 +80,7 @@ public class testCase {
 	}
 	
 	@Test
-	public void testSmallWinds() { //小四喜
+	public void testSmallWinds() { //小四喜...
 		Hand hand = new Hand('E','E',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","s0",
 				"w0","w0","d2","d2","d2"});
 		SmallWinds smallWinds = new SmallWinds();
