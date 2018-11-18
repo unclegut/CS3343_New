@@ -9,7 +9,7 @@ import MahJong.Suits;
 import MahJong.Tile;
 
 public class AllHonorTiles extends HandPattern{
-	public AllHonorTiles(int point, String name) {
+	public AllHonorTiles() {
 		super(10, "AllHonorTiles");
 	}
 
