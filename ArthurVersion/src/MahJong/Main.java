@@ -1,7 +1,7 @@
 package MahJong;
 import java.util.*;
 
-//123 Changed
+
 public class Main {
 	public static void main(String[] args) {
 		char pWind, dWind;
@@ -17,20 +17,14 @@ public class Main {
 		System.out.println("Dealer's Wind: (E/S/W/N)");
 		dWind = scanner.nextLine().charAt(0);
 		
-		System.out.println("Tiles in your hand:");
+		System.out.println("Tiles in your hand: (e.g. B91)");		
 		tiles = scanner.nextLine();
 		String[] tileStr = tiles.split("\\s+"); //length must be 14
 		// s = 1 white space, s+ = multiple white space
 		
-		if(!(Validation.validating(tileStr))){ //check if length = 14 & correctness of suits 
-			// need error handler later
-			System.out.println("Program end!");
-			scanner.close();
-			System.exit(1);
-		}	
-		
 		//maybe can do sort here:
 		Arrays.sort(tileStr);// sort the array first 
+		//!! Need Checking here??
 		
 		Hand hand = new Hand(pWind, dWind, tileStr);
 		
@@ -39,9 +33,7 @@ public class Main {
 		//System.out.print("Index of Character is:" + Suits.valueOf("Character").ordinal());
 		
 		//Testing section
-		
-		//hand.checkHand();
-		
+		hand.checkHand();
 		//Testing section
 		
 		scanner.close();

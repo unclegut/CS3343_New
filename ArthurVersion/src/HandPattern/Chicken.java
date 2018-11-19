@@ -15,5 +15,6 @@ public class Chicken extends HandPattern{
 
 	public boolean checkPattern(Hand hand){
 
+		return true;
 	}
 }

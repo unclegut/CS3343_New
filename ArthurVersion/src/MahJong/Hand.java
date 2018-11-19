@@ -7,22 +7,18 @@ public class Hand {
 	private ArrayList<Tile> tiles;
 	private char prevailingWind;
 	private char dealersWind;
-	private boolean winning;
 	private ArrayList<HandPattern> winningHand;
-	private int point;
 	private HandChecker hc;
 
 	public Hand(char prevailingWind, char dealersWind, String[] strTiles) {
 		hc = HandChecker.getInstance();
 		this.prevailingWind = prevailingWind;
 		this.dealersWind = dealersWind;
-		
 		//tiles = new Tile[tileLength];
 		tiles = new ArrayList<Tile>();
 		for (int i = 0; i < 14; i++) {
 			tiles.add(new Tile(strTiles[i]));
 		}
-		point = 0; //initialize number of score
 	}
 	
 	public ArrayList<Tile> getList() {
@@ -32,6 +28,14 @@ public class Hand {
 	// get the information of tile in hand
 	public Tile getTile(int i) {
 		return tiles.get(i);
+	}
+	
+	public char getPrevailingWind() {
+		return prevailingWind;
+	}
+	
+	public char getDealersWind() {
+		return dealersWind;
 	}
 
 	public void printHand() {
@@ -49,24 +53,21 @@ public class Hand {
 	}
 	
 	private void printCheckingResult() {
-		if (winning) {
+		if (!winningHand.isEmpty()) {
+			int points = 0;
 			System.out.println("Hand patterns: ");		
-			for (HandPattern hp : winningHand)
-				System.out.println(hp.toString());		
-			System.out.println("\nTotal winning point: " + point);
+			for (HandPattern hp : winningHand) {
+				System.out.println(hp.toString());
+				points += hp.getPoint();
+			}
+			System.out.println("\nTotal winning point: " + (points == -1 ? "Maximum" : points));
 		}
 		else
 			System.out.println("This hand is a Trick Hand!");
 	}
-	
-	public void setCheckResult(boolean winning, ArrayList<HandPattern> winningHand, int point) {
-		this.winning = winning;
-		this.winningHand = winningHand;
-		this.point = point;
-	}
 
 	public void checkHand() {
-		hc.checkHand(this, prevailingWind, dealersWind);
+		winningHand = hc.checkHand(this);
 		printCheckingResult();
 	}
 }
