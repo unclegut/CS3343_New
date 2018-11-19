@@ -71,7 +71,7 @@ public class testCase {
 	}
 	
 	@Test
-	public void testSmallDragon() { //小三元
+	public void testSmallDragon() { //小三元12321
 		Hand hand = new Hand('E','E',new String[]{"r0","r0","r0","g0","g0","g0","_0","_0","d1",
 				"d1","d1","d2","d2","d2"});
 		SmallDragon smallDragon = new SmallDragon();
