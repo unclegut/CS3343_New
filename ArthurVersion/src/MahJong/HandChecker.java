@@ -100,19 +100,19 @@ public class HandChecker {
 					checkPattern(5);
 				}
 			} else {
-				if (!checkPattern(1)) {
-					if (!checkPattern(2)) {
-						checkPattern(9);
-						checkPattern(10);
-						checkPattern(11);
-						if (checkPattern(8))
-							checkPattern(5);
-						else
-							checkPattern(4);
-					}
+				if (!checkPattern(2)) {
+					checkPattern(9);
+					checkPattern(10);
+					checkPattern(11);
+					if (checkPattern(8))
+						checkPattern(5);
+					else
+						checkPattern(4);
 				}
 			}
 		}
+		else
+			checkPattern(1);
 
 		Collections.sort(winningHand, new Comparator<HandPattern>() {
 			@Override
