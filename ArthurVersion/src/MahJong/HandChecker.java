@@ -10,11 +10,13 @@ import HandPattern.AllinTriplets;
 import HandPattern.Chicken;
 import HandPattern.CommonHand;
 import HandPattern.ContainOneNine;
+import HandPattern.DealerWindTriplets;
 import HandPattern.GreatDragon;
 import HandPattern.GreatWinds;
 import HandPattern.GreenDragon;
 import HandPattern.MixSuit;
 import HandPattern.OnlyOneNine;
+import HandPattern.PrevailingEastWind;
 import HandPattern.RedDragon;
 import HandPattern.SameSuit;
 import HandPattern.SmallDragon;
@@ -31,44 +33,24 @@ public class HandChecker {
 
 	private HandChecker() {
 		handPatterns = new ArrayList<HandPattern>();
-		handPatterns.add(new GreatWinds());
-		handPatterns.add(new ThirteenOrphans());
-		handPatterns.add(new OnlyOneNine());
-		handPatterns.add(new AllHonorTiles());
-		handPatterns.add(new SameSuit());
-		handPatterns.add(new SmallWinds());
-		handPatterns.add(new GreatDragon());
-		handPatterns.add(new SmallDragon());
-		handPatterns.add(new MixSuit());
-		handPatterns.add(new AllinTriplets());
-		handPatterns.add(new ContainOneNine());
-		handPatterns.add(new CommonHand());
-		handPatterns.add(new SamplePattern()); 
-		handPatterns.add(new RedDragon());
-		handPatterns.add(new GreenDragon());
-		handPatterns.add(new WhiteDragon());
-		handPatterns.add(new Chicken());
-
-		/*
-		 * handPatterns.add(new 大四喜()); //0 
-		 * handPatterns.add(new 十三么()); //1
-		 * handPatterns.add(new 清么九()); //2 
-		 * handPatterns.add(new 字一色()); //3
-		 * handPatterns.add(new 清一色()); //4 
-		 * handPatterns.add(new 小四喜()); //5
-		 * handPatterns.add(new 大三元()); //6 
-		 * handPatterns.add(new 小三元()); //7
-		 * handPatterns.add(new 混一色()); //8 
-		 * handPatterns.add(new 對對糊()); //9
-		 * handPatterns.add(new 花么()); //10 
-		 * handPatterns.add(new 平糊()); //11
-		 * handPatterns.add(new 圈風牌刻子()); //12 
-		 * handPatterns.add(new 門風牌刻子()); //13
-		 * handPatterns.add(new 紅中刻子()); //14 
-		 * handPatterns.add(new 發財刻子()); //15
-		 * handPatterns.add(new 白板刻子()); //16 
-		 * handPatterns.add(new 雞糊()); //17
-		 */
+		handPatterns.add(new GreatWinds());      // 0 大四喜
+		handPatterns.add(new ThirteenOrphans()); // 1 十三么
+		handPatterns.add(new OnlyOneNine());     // 2 清么九
+		handPatterns.add(new AllHonorTiles());   // 3 字一色
+		handPatterns.add(new SameSuit());        // 4 清一色
+		handPatterns.add(new SmallWinds());      // 5 小四喜
+		handPatterns.add(new GreatDragon());     // 6 大三元
+		handPatterns.add(new SmallDragon());     // 7 小三元
+		handPatterns.add(new MixSuit());         // 8 混一色
+		handPatterns.add(new AllinTriplets());   // 9 對對糊
+		handPatterns.add(new ContainOneNine());  //10 花么
+		handPatterns.add(new CommonHand());      //11 平糊
+		handPatterns.add(new PrevailingEastWind());     //12 圈風牌刻子
+		handPatterns.add(new DealerWindTriplets());     //13 門風牌刻子
+		handPatterns.add(new RedDragon());       //14 紅中刻子
+		handPatterns.add(new GreenDragon());     //15 發財刻子
+		handPatterns.add(new WhiteDragon());     //16 白板刻子
+		handPatterns.add(new Chicken());         //17 雞糊
 	}
 
 	public static HandChecker getInstance() {

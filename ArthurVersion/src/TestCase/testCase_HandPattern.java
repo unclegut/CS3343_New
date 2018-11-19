@@ -5,9 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import MahJong.Hand;
-import MahJong.Tile;
 import HandPattern.ThirteenOrphans;
-import MahJong.Validation;
 import HandPattern.AllHonorTiles;
 import HandPattern.AllinTriplets;
 import HandPattern.GreatDragon;
@@ -17,41 +15,8 @@ import HandPattern.SameSuit;
 import HandPattern.SmallDragon;
 import HandPattern.SmallWinds;
 
-public class testCase {
-
-	/* test for validation*/
-	@Test
-	public void testValidation_length() { //length!=14
-		boolean result = Validation.validating(new String[]{"n0","n0","n0","e0","e0","e0"});
-		
-		assertEquals(false,result);
-	}
+public class testCase_HandPattern {
 	
-	@Test
-	public void testValidation_suit() { //invalid suit
-		boolean result = Validation.validating(new String[]{"z0","n0","n0","e0","e0","e0",
-				"r0","r0","r0","g0","g0","g0","_0","_0"});
-		
-		assertEquals(false,result);
-	}
-	
-	@Test
-	public void testValidation_rank() { //invalid rank
-		boolean result = Validation.validating(new String[]{"n1","n2","n3","e0","e0","e0",
-				"r0","r0","r0","g0","g0","g0","_0","_0"});
-		
-		assertEquals(false,result);
-	}
-	
-	@Test
-	public void testValidation_valid() { //valid hand
-		boolean result = Validation.validating(new String[]{"n0","n0","n0","e0","e0","e0",
-				"r0","r0","r0","g0","g0","g0","_0","_0"});
-		
-		assertEquals(true,result);
-	}
-
-	/* test for hand pattern*/ 
 	@Test
 	public void testAllInTriplet() { //對對糊
 		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b1","b1","b1","d1","d1","d1",
