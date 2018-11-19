@@ -23,6 +23,6 @@ public class CommonHand extends HandPattern{
 		//Add sort here to make 2333 sequence, only this class need
 		Collections.sort(tileCount);
 		
-		
+		return true;
 	}
 }

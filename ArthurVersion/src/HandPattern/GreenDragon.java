@@ -8,7 +8,7 @@ import MahJong.Suits;
 import MahJong.Tile;
 
 public class GreenDragon extends HandPattern{
-	public GreenDragon(int point, String name) {
+	public GreenDragon() {
 		super(1, "GreenDragon");
 	}
 

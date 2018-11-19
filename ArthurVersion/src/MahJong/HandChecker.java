@@ -12,12 +12,15 @@ import HandPattern.CommonHand;
 import HandPattern.ContainOneNine;
 import HandPattern.GreatDragon;
 import HandPattern.GreatWinds;
+import HandPattern.GreenDragon;
 import HandPattern.MixSuit;
 import HandPattern.OnlyOneNine;
+import HandPattern.RedDragon;
 import HandPattern.SameSuit;
 import HandPattern.SmallDragon;
 import HandPattern.SmallWinds;
 import HandPattern.ThirteenOrphans;
+import HandPattern.WhiteDragon;
 
 
 public class HandChecker {
@@ -38,12 +41,12 @@ public class HandChecker {
 		handPatterns.add(new SmallDragon());
 		handPatterns.add(new MixSuit());
 		handPatterns.add(new AllinTriplets());
-		handPatterns.add(new SamplePattern());
+		handPatterns.add(new ContainOneNine());
 		handPatterns.add(new CommonHand());
-		handPatterns.add(new SamplePattern());
-		handPatterns.add(new SamplePattern());
-		handPatterns.add(new SamplePattern());
-		handPatterns.add(new SamplePattern());
+		handPatterns.add(new SamplePattern()); 
+		handPatterns.add(new RedDragon());
+		handPatterns.add(new GreenDragon());
+		handPatterns.add(new WhiteDragon());
 		handPatterns.add(new Chicken());
 
 		/*
