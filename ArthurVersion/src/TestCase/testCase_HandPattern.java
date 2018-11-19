@@ -11,6 +11,7 @@ import HandPattern.AllinTriplets;
 import HandPattern.GreatDragon;
 import HandPattern.GreatWinds;
 import HandPattern.MixSuit;
+import HandPattern.OnlyOneNine;
 import HandPattern.SameSuit;
 import HandPattern.SmallDragon;
 import HandPattern.SmallWinds;
@@ -99,13 +100,59 @@ public class testCase_HandPattern {
 	}
 	
 	@Test
-	public void testSmallWinds() { //小四喜
-		Hand hand = new Hand('E','E',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","s0",
+	public void testSmallWinds() { //小四喜 2333
+		Hand hand = new Hand('E','E',new String[]{"n0","n0","e0","e0","e0","s0","s0","s0","w0",
 				"w0","w0","d2","d2","d2"});
 		SmallWinds smallWinds = new SmallWinds();
 		boolean result = smallWinds.checkPattern(hand);
 		assertEquals(true,result);
 	}
+	
+	@Test
+	public void testSmallWinds2() { //小四喜 3233
+		Hand hand = new Hand('E','E',new String[]{"n0","n0","n0","e0","e0","s0","s0","s0","w0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testSmallWinds3() { //小四喜 3323
+		Hand hand = new Hand('E','E',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","w0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testSmallWinds4() { //小四喜 3332
+		Hand hand = new Hand('E','E',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","s0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(true,result);
+	}	
+	
+	@Test
+	public void testSmallWinds5() { //小四喜 not 3332 structure, else return false
+		Hand hand = new Hand('E','E',new String[]{"c1","n0","n0","e0","e0","e0","s0","s0","s0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}	
+	
+	@Test
+	public void testSmallWinds6() { //小四喜 return false
+		Hand hand = new Hand('E','E',new String[]{"d1","d1","d1","d2","d3","d4","d5","d5","d5",
+			"d6","d7","d8","d9","d9"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}	
+	
 	
 	@Test
 	public void testSameSuit() { //清一色
@@ -177,6 +224,33 @@ public class testCase_HandPattern {
 				"g0","g0","g0","_0","_0"});
 		AllHonorTiles allHonerTiles = new AllHonorTiles();
 		boolean result = allHonerTiles.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testOnlyOneNine() { //清么九
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"c9","c9","c9","b1","b1"});
+		OnlyOneNine onlyOneNine = new OnlyOneNine();
+		boolean result = onlyOneNine.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testOnlyOneNine2() { //清么九 false (not 1 or 9)
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"c9","c9","c9","b2","b2"});
+		OnlyOneNine onlyOneNine = new OnlyOneNine();
+		boolean result = onlyOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testOnlyOneNine3() { //清么九 false (not c/b/d)
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"c9","c9","c9","_0","_0"});
+		OnlyOneNine onlyOneNine = new OnlyOneNine();
+		boolean result = onlyOneNine.checkPattern(hand);
 		assertEquals(false,result);
 	}
 	
