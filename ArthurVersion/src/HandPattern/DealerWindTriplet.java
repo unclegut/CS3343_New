@@ -8,9 +8,9 @@ import MahJong.Hand;
 import MahJong.Suits;
 import MahJong.Tile;
 
-public class DealerWindTriplets extends HandPattern{
+public class DealerWindTriplet extends HandPattern{
 	
-	public DealerWindTriplets() {
+	public DealerWindTriplet() {
 		super(1, "DealerWindTriplets");
 	}
 

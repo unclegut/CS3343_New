@@ -1,13 +1,13 @@
 package TestCase;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import MahJong.Hand;
 import HandPattern.ThirteenOrphans;
 import HandPattern.AllHonorTiles;
 import HandPattern.AllinTriplets;
+import HandPattern.ContainOneNine;
 import HandPattern.GreatDragon;
 import HandPattern.GreatWinds;
 import HandPattern.MixSuit;
@@ -17,6 +17,33 @@ import HandPattern.SmallDragon;
 import HandPattern.SmallWinds;
 
 public class testCase_HandPattern {
+	
+	@Test
+	public void testContainOneNine() { //花么
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testContainOneNine2() { //花么 (not 1 or 9)
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d8","d8","d8",
+				"e0","e0","e0","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testContainOneNine3() { //花么 (not 23333)
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c2","b9","b9","b9","d8","d8","d8",
+				"e0","e0","e0","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
 	
 	@Test
 	public void testAllInTriplet() { //對對糊

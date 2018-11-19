@@ -10,7 +10,7 @@ import HandPattern.AllinTriplets;
 import HandPattern.Chicken;
 import HandPattern.CommonHand;
 import HandPattern.ContainOneNine;
-import HandPattern.DealerWindTriplets;
+import HandPattern.DealerWindTriplet;
 import HandPattern.GreatDragon;
 import HandPattern.GreatWinds;
 import HandPattern.GreenDragon;
@@ -45,8 +45,8 @@ public class HandChecker {
 		handPatterns.add(new AllinTriplets());   // 9 對對糊
 		handPatterns.add(new ContainOneNine());  //10 花么
 		handPatterns.add(new CommonHand());      //11 平糊
-		handPatterns.add(new PrevailingEastWind());     //12 圈風牌刻子
-		handPatterns.add(new DealerWindTriplets());     //13 門風牌刻子
+		handPatterns.add(new PrevailingEastWind());     //12 圈風牌刻子 TODO
+		handPatterns.add(new DealerWindTriplet());     //13 門風牌刻子 TODO
 		handPatterns.add(new RedDragon());       //14 紅中刻子
 		handPatterns.add(new GreenDragon());     //15 發財刻子
 		handPatterns.add(new WhiteDragon());     //16 白板刻子
