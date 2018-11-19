@@ -19,8 +19,10 @@ public class SameSuit extends HandPattern{
 		for(Tile tile:tileSet)
 			tileCount.add(Collections.frequency(hand.getList(), tile)); //count unique element in the set
 		
-		String checkingSuit = null; // the suit that only exist in hand
-		if(tileSet.get(0).getSuit() == Suits.Bamboo || tileSet.get(0).getSuit() == Suits.Character || tileSet.get(0).getSuit() == Suits.Dot) {
+		String checkingSuit = null; // the only suit that exist in hand
+		if(tileSet.get(0).getSuit() == Suits.Bamboo || 
+				tileSet.get(0).getSuit() == Suits.Character || 
+				tileSet.get(0).getSuit() == Suits.Dot) {
 	
 			checkingSuit = tileSet.get(0).getSuitName(); //get the first tile as checking tile
 		
@@ -29,7 +31,7 @@ public class SameSuit extends HandPattern{
 					return false;
 			}
 			
-			return true; //no failure, check successfully therefore return 7
+			return true; //no failure, check successfully therefore return true
 		}
 		
 		else return false; // not same suit
