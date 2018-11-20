@@ -2,7 +2,7 @@ package MahJong;
 
 public final class Validation {
 	
-	private Validation() {} //if no default constructor, the class will be highlighted
+	private Validation() {} //if no no-argument constructor, the class will be highlighted
 							//with red color when testing
 
 	public static boolean validateHand(String[] str) {
