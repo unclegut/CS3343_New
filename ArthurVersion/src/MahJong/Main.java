@@ -4,18 +4,18 @@ import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
-		char pWind, dWind;
+		char pWind, sWind;
 		String tiles;
 		
 		System.out.println("Hello!");
 		//System.out.println("Welcome to Hong Kong MahJong Point Calculator!");
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Prevailing Wind: (E/S/W/N)");
+		System.out.println("Prevalent Wind: (E/S/W/N)");
 		pWind = scanner.nextLine().charAt(0);
 		
-		System.out.println("Dealer's Wind: (E/S/W/N)");
-		dWind = scanner.nextLine().charAt(0);
+		System.out.println("Seat Wind: (E/S/W/N)");
+		sWind = scanner.nextLine().charAt(0);
 		
 		System.out.println("Tiles in your hand: (e.g. B91)");		
 		tiles = scanner.nextLine();
@@ -26,7 +26,7 @@ public class Main {
 		Arrays.sort(tileStr);// sort the array first 
 		//!! Need Checking here??
 		
-		Hand hand = new Hand(pWind, dWind, tileStr);
+		Hand hand = new Hand(pWind, sWind, tileStr);
 		
 		hand.printHand();
 		

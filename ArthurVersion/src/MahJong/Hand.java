@@ -5,15 +5,15 @@ import HandPattern.HandPattern;
 
 public class Hand {
 	private ArrayList<Tile> tiles;
-	private char prevailingWind;
-	private char dealersWind;
+	private char prevalentWind;//°é­·
+	private char seatWind; //ªù­·
 	private ArrayList<HandPattern> winningHand;
 	private HandChecker hc;
 
 	public Hand(char prevailingWind, char dealersWind, String[] strTiles) {
 		hc = HandChecker.getInstance();
-		this.prevailingWind = prevailingWind;
-		this.dealersWind = dealersWind;
+		this.prevalentWind = prevailingWind;
+		this.seatWind = dealersWind;
 		//tiles = new Tile[tileLength];
 		tiles = new ArrayList<Tile>();
 		for (int i = 0; i < 14; i++) {
@@ -31,11 +31,11 @@ public class Hand {
 	}
 	
 	public char getPrevailingWind() {
-		return prevailingWind;
+		return prevalentWind;
 	}
 	
 	public char getDealersWind() {
-		return dealersWind;
+		return seatWind;
 	}
 
 	public void printHand() {

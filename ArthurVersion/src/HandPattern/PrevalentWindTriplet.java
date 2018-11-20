@@ -7,8 +7,8 @@ import MahJong.Hand;
 import MahJong.Suits;
 import MahJong.Tile;
 
-public class PrevailingEastWind extends HandPattern{
-	public PrevailingEastWind() {
+public class PrevalentWindTriplet extends HandPattern{
+	public PrevalentWindTriplet() {
 		super(1, "EastWind");
 	}
 

@@ -10,7 +10,6 @@ public enum Suits {
 		RedDragon('r'), //7
 		GreenDragon('g'), //8
 		WhiteDragon('_'); //9
-		//Flower('f');
 	
 		private final char suit;
 	

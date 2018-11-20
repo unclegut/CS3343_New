@@ -5,18 +5,75 @@ import org.junit.Test;
 
 import MahJong.Hand;
 import HandPattern.ThirteenOrphans;
+import HandPattern.WhiteDragon;
 import HandPattern.AllHonorTiles;
 import HandPattern.AllinTriplets;
 import HandPattern.ContainOneNine;
 import HandPattern.GreatDragon;
 import HandPattern.GreatWinds;
+import HandPattern.GreenDragon;
 import HandPattern.MixSuit;
 import HandPattern.OnlyOneNine;
+import HandPattern.RedDragon;
 import HandPattern.SameSuit;
 import HandPattern.SmallDragon;
 import HandPattern.SmallWinds;
 
-public class testCase_HandPattern {
+public class UnitTest_HandPattern {
+	
+	@Test
+	public void testRedDragon() { //紅中
+		Hand hand = new Hand('E','E',new String[]{"r0","r0","r0","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","_0","_0"});
+		RedDragon redDragon = new RedDragon();
+		boolean result = redDragon.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testRedDragon2() { //紅中 false
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","_0","_0"});
+		RedDragon redDragon = new RedDragon();
+		boolean result = redDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testGreenDragon() { //發財
+		Hand hand = new Hand('E','E',new String[]{"g0","g0","g0","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","_0","_0"});
+		GreenDragon greenDragon = new GreenDragon();
+		boolean result = greenDragon.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testGreenDragon2() { //發財 false
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","_0","_0"});
+		GreenDragon greenDragon = new GreenDragon();
+		boolean result = greenDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testWhiteDragon() { //白板
+		Hand hand = new Hand('E','E',new String[]{"_0","_0","_0","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","r0","r0"});
+		WhiteDragon whiteDragon = new WhiteDragon();
+		boolean result = whiteDragon.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testWhiteDragon2() { //白板 false
+		Hand hand = new Hand('E','E',new String[]{"g0","g0","g0","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","r0","r0"});
+		WhiteDragon whiteDragon = new WhiteDragon();
+		boolean result = whiteDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
 	
 	@Test
 	public void testContainOneNine() { //花么
@@ -28,7 +85,7 @@ public class testCase_HandPattern {
 	}
 	
 	@Test
-	public void testContainOneNine2() { //花么 (not 1 or 9)
+	public void testContainOneNine2() { //花么 false (not 1 or 9)
 		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b9","b9","b9","d8","d8","d8",
 				"e0","e0","e0","_0","_0"});
 		ContainOneNine containOneNine = new ContainOneNine();
@@ -37,7 +94,25 @@ public class testCase_HandPattern {
 	}
 	
 	@Test
-	public void testContainOneNine3() { //花么 (not 23333)
+	public void testContainOneNine3() { //花么 false (all 1 )
+		Hand hand = new Hand('E','E',new String[]{"c1","c1","c1","b1","b1","b1","d1","d1","d1",
+				"e1","e1","e1","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testContainOneNine4() { //花么 false (all 9 )
+		Hand hand = new Hand('E','E',new String[]{"c9","c9","c9","b9","b9","b9","d9","d9","d9",
+				"e9","e9","e9","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testContainOneNine5() { //花么 false (not 23333)
 		Hand hand = new Hand('E','E',new String[]{"c1","c1","c2","b9","b9","b9","d8","d8","d8",
 				"e0","e0","e0","_0","_0"});
 		ContainOneNine containOneNine = new ContainOneNine();
@@ -118,7 +193,7 @@ public class testCase_HandPattern {
 	}
 	
 	@Test
-	public void testSmallDragon4() { //小三元 false (don't have _0)
+	public void testSmallDragon4() { //小三元 false 
 		Hand hand = new Hand('E','E',new String[]{"r0","r0","g0","g0","g0","c1","c1","c1","d1",
 				"d1","d1","d2","d2","d2"});
 		SmallDragon smallDragon = new SmallDragon();
