@@ -7,9 +7,9 @@ import MahJong.Hand;
 import MahJong.Suits;
 import MahJong.Tile;
 
-public class PrevalentWindTriplet extends HandPattern{
-	public PrevalentWindTriplet() {
-		super(1, "EastWind");
+public class PrevalentWindTriplet extends HandPattern{ //°é­·
+	public PrevalentWindTriplet() { 
+		super(1, "PrevalentWindTriplet");
 	}
 
 	@Override
@@ -21,9 +21,11 @@ public class PrevalentWindTriplet extends HandPattern{
 			tileCount.add(Collections.frequency(hand.getList(), tile)); //count unique element 
 		}
 		
-		//Case for red/green/white dragon
+		char pWind = hand.getPrevalentWind();
+		Suits suit = Suits.suitCharToEnum(pWind);
+		
 		for(int i = 0 ; i < tileSet.size() ; i++){
-			if(tileSet.get(i).getSuit() == Suits.EastWind)
+			if(tileSet.get(i).getSuit() == suit)
 				if(tileCount.get(i) == 3)
 					return true;
         }

@@ -1,15 +1,15 @@
 package MahJong;
 public enum Suits {
-		Character('c'), //0
-		Bamboo('b'), //1
-		Dot('d'), //2
-		NorthWind('n'), //3
-		EastWind('e'), //4
-		SouthWind('s'), //5
-		WestWind('w'), //6
-		RedDragon('r'), //7
-		GreenDragon('g'), //8
-		WhiteDragon('_'); //9
+		Character('c'),		//0
+		Bamboo('b'), 		//1
+		Dot('d'), 			//2
+		NorthWind('n'), 	//3
+		EastWind('e'), 		//4
+		SouthWind('s'), 	//5
+		WestWind('w'), 		//6
+		RedDragon('r'), 	//7
+		GreenDragon('g'), 	//8
+		WhiteDragon('_');   //9
 	
 		private final char suit;
 	
@@ -39,8 +39,6 @@ public enum Suits {
 				return GreenDragon;
 			case '_':
 				return WhiteDragon;
-			//case 'f':
-				//return Flower;
 			}
 			return null;
 		}

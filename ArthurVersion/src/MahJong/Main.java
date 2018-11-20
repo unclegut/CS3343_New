@@ -11,10 +11,10 @@ public class Main {
 		//System.out.println("Welcome to Hong Kong MahJong Point Calculator!");
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Prevalent Wind: (E/S/W/N)");
+		System.out.println("Prevalent Wind: (e/s/w/n)");
 		pWind = scanner.nextLine().charAt(0);
 		
-		System.out.println("Seat Wind: (E/S/W/N)");
+		System.out.println("Seat Wind: (e/s/w/n)");
 		sWind = scanner.nextLine().charAt(0);
 		
 		System.out.println("Tiles in your hand: (e.g. B91)");		

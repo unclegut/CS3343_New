@@ -10,10 +10,10 @@ public class Hand {
 	private ArrayList<HandPattern> winningHand;
 	private HandChecker hc;
 
-	public Hand(char prevailingWind, char dealersWind, String[] strTiles) {
+	public Hand(char prevalentWind, char seatWind, String[] strTiles) {
 		hc = HandChecker.getInstance();
-		this.prevalentWind = prevailingWind;
-		this.seatWind = dealersWind;
+		this.prevalentWind = prevalentWind;
+		this.seatWind = seatWind;
 		//tiles = new Tile[tileLength];
 		tiles = new ArrayList<Tile>();
 		for (int i = 0; i < 14; i++) {
@@ -30,11 +30,11 @@ public class Hand {
 		return tiles.get(i);
 	}
 	
-	public char getPrevailingWind() {
+	public char getPrevalentWind() {
 		return prevalentWind;
 	}
 	
-	public char getDealersWind() {
+	public char getSeatWind() {
 		return seatWind;
 	}
 

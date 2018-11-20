@@ -68,7 +68,7 @@ public final class Validation {
 
 	public static boolean validateWind(char wind) {
 
-		if (!(wind == 'E' || wind == 'S' || wind == 'W' || wind == 'N')) {
+		if (!(wind == 'e' || wind == 's' || wind == 'w' || wind == 'n')) {
 			System.out.println("Wind should be E/S/W/N.");
 			System.out.println("Error: " + wind);
 			return false;

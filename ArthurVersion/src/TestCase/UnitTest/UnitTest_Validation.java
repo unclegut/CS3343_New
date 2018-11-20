@@ -72,7 +72,7 @@ public class UnitTest_Validation {
 	
 	@Test
 	public void testValidation_wind2() { //valid wind
-		boolean result = Validation.validateWind('N');
+		boolean result = Validation.validateWind('n');
 		
 		assertEquals(true,result);
 	}
