@@ -1,6 +1,9 @@
 package MahJong;
 
-public class Validation {
+public final class Validation {
+	
+	private Validation() {} //if no default constructor, the class will be highlighted
+							//with red color when testing
 
 	public static boolean validateHand(String[] str) {
 		if (str.length != 14) { // length = 14
