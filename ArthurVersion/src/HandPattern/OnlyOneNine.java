@@ -11,7 +11,7 @@ import MahJong.Tile;
 public class OnlyOneNine extends HandPattern {
 
 	public OnlyOneNine() {
-		super(10, "OnlyOneNine");
+		super(-1, "OnlyOneNine");
 		// TODO Auto-generated constructor stub
 	}
 
@@ -25,8 +25,7 @@ public class OnlyOneNine extends HandPattern {
 		// DDW <- Must be ddw, else fail
 		Collections.sort(tileCount);
 
-		if (tileCount.get(0) == 2 && tileCount.get(1) == 3 && tileCount.get(2) == 3 && tileCount.get(3) == 3
-				&& tileCount.get(4) == 3) {
+		if (tileCount.get(0) == 2 && tileCount.get(1) == 3 && tileCount.get(2) == 3 && tileCount.get(3) == 3 && tileCount.get(4) == 3) {
 
 			for (int i = 0; i < tileSet.size(); i++) {
 				if ((tileSet.get(i).getSuit() == Suits.Character || tileSet.get(i).getSuit() == Suits.Bamboo

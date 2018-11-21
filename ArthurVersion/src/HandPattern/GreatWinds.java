@@ -11,7 +11,7 @@ import MahJong.Tile;
 public class GreatWinds extends HandPattern{
 	
 	public GreatWinds() {
-		super(13, "GreatWinds");
+		super(-1, "GreatWinds");
 		// TODO Auto-generated constructor stub
 	}
 

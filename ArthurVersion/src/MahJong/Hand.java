@@ -16,7 +16,7 @@ public class Hand {
 		this.seatWind = seatWind;
 		//tiles = new Tile[tileLength];
 		tiles = new ArrayList<Tile>();
-		for (int i = 0; i < 14; i++) {
+		for (int i = 0; i < strTiles.length; i++) {
 			tiles.add(new Tile(strTiles[i]));
 		}
 	}

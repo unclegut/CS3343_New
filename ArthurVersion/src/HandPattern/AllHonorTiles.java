@@ -10,7 +10,7 @@ import MahJong.Tile;
 
 public class AllHonorTiles extends HandPattern{
 	public AllHonorTiles() {
-		super(10, "AllHonorTiles");
+		super(-1, "AllHonorTiles");
 	}
 
 	public boolean checkPattern(Hand hand){

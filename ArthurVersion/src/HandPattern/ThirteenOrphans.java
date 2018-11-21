@@ -10,7 +10,7 @@ import MahJong.Tile;
 public class ThirteenOrphans  extends HandPattern {
 	
 	public ThirteenOrphans() {
-		super(13, "ThirteenOrphans");
+		super(-1, "ThirteenOrphans");
 		// TODO Auto-generated constructor stub
 	}
 
