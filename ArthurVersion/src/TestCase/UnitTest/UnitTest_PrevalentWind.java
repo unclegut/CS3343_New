@@ -47,12 +47,13 @@ public class UnitTest_PrevalentWind {
 	}
 	
 	@Test
-	public void testPrevalentWindTriplet5() { //false
+	public void testPrevalentWindTriplet5() { //false (count!=3)
 		Hand hand = new Hand('n','n',new String[]{"d1","d1","d1","c1","c1","c1","r0","r0","r0",
-				"g0","g0","g0","_0","_0"});
+				"g0","g0","g0","n0","n0"});
 		PrevalentWindTriplet prevalentWindTriplet = new PrevalentWindTriplet();
 		boolean result = prevalentWindTriplet.checkPattern(hand);
 		assertEquals(false,result);
 	}
+	
 
 }

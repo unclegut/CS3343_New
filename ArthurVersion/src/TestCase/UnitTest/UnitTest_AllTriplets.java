@@ -18,6 +18,7 @@ public class UnitTest_AllTriplets {
 		assertEquals(true,result);
 	}
 	
+	
 	@Test
 	public void testAllInTriplet2() { //¹ï¹ï½k false
 		Hand hand = new Hand('e','e',new String[]{"c2","c2","b2","b2","d2","d2","c3","c3","c3",
