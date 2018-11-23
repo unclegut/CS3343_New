@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.AllHonorTiles;
-import HandPattern.PrevalentWindTriplet;
-import MahJong.Hand;
+import handPattern.AllHonorTiles;
+import handPattern.PrevalentWindTriplet;
+import mahJong.Hand;
 
 public class UnitTest_PrevalentWind {
 

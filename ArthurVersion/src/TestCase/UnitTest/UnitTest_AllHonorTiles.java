@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.AllHonorTiles;
-import MahJong.Hand;
+import handPattern.AllHonorTiles;
+import mahJong.Hand;
 
 public class UnitTest_AllHonorTiles {
 

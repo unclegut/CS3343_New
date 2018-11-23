@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.SameSuit;
-import MahJong.Hand;
+import handPattern.SameSuit;
+import mahJong.Hand;
 
 public class UnitTest_SameSuit {
 

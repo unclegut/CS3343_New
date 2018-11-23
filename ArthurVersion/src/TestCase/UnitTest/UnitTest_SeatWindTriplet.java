@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.SeatWindTriplet;
-import MahJong.Hand;
+import handPattern.SeatWindTriplet;
+import mahJong.Hand;
 
 public class UnitTest_SeatWindTriplet {
 

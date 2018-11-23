@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.SmallDragon;
-import MahJong.Hand;
+import handPattern.SmallDragon;
+import mahJong.Hand;
 
 public class UnitTest_SmallDragon {
 

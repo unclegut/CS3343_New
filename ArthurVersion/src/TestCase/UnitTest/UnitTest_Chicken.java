@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.Chicken;
-import HandPattern.SmallDragon;
-import MahJong.Hand;
+import handPattern.Chicken;
+import handPattern.SmallDragon;
+import mahJong.Hand;
 
 public class UnitTest_Chicken {
 

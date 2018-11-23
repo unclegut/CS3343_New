@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.OnlyOneNine;
-import MahJong.Hand;
+import handPattern.OnlyOneNine;
+import mahJong.Hand;
 
 public class UnitTest_onlyOneNine {
 

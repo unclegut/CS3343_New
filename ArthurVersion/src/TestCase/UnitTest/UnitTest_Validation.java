@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import MahJong.Validation;
+import mahJong.Validation;
 
 public class UnitTest_Validation {
 

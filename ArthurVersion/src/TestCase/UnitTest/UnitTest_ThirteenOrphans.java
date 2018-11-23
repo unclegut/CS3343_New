@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.ThirteenOrphans;
-import MahJong.Hand;
+import handPattern.ThirteenOrphans;
+import mahJong.Hand;
 
 public class UnitTest_ThirteenOrphans {
 

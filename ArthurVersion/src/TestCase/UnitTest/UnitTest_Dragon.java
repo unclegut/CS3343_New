@@ -4,10 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.GreenDragon;
-import HandPattern.RedDragon;
-import HandPattern.WhiteDragon;
-import MahJong.Hand;
+import handPattern.GreenDragon;
+import handPattern.RedDragon;
+import handPattern.WhiteDragon;
+import mahJong.Hand;
 
 public class UnitTest_Dragon {
 

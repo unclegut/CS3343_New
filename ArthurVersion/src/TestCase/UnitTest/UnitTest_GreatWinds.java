@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import HandPattern.GreatWinds;
-import MahJong.Hand;
+import handPattern.GreatWinds;
+import mahJong.Hand;
 
 public class UnitTest_GreatWinds {
 
