@@ -21,20 +21,27 @@ public class ThirteenOrphans  extends HandPattern {
 		for(Tile tile:tileSet)
 			tileCount.add(Collections.frequency(hand.getList(), tile)); //count unique element 
 		
-		//Contain 13 element
-		if ( hand.getList().contains(new Tile("c1")) && hand.getList().contains(new Tile("c9"))
-				&& hand.getList().contains(new Tile("b1")) && hand.getList().contains(new Tile("b9"))
-				&& hand.getList().contains(new Tile("d1")) && hand.getList().contains(new Tile("d9"))
-				&& hand.getList().contains(new Tile("n0")) && hand.getList().contains(new Tile("e0"))
-				&& hand.getList().contains(new Tile("s0")) && hand.getList().contains(new Tile("w0"))
-				&& hand.getList().contains(new Tile("r0")) && hand.getList().contains(new Tile("g0"))
-				&& hand.getList().contains(new Tile("_0"))){
-			
-			for(int i = 0 ; i < tileCount.size() ;i++){
+		ArrayList<Tile> ThirteenOrphans = new ArrayList<Tile>();
+		ThirteenOrphans.add(new Tile("c1"));
+		ThirteenOrphans.add(new Tile("c9"));
+		ThirteenOrphans.add(new Tile("b1"));
+		ThirteenOrphans.add(new Tile("b9"));
+		ThirteenOrphans.add(new Tile("d1"));
+		ThirteenOrphans.add(new Tile("d9"));
+		ThirteenOrphans.add(new Tile("n0"));
+		ThirteenOrphans.add(new Tile("e0"));
+		ThirteenOrphans.add(new Tile("s0"));
+		ThirteenOrphans.add(new Tile("w0"));
+		ThirteenOrphans.add(new Tile("r0"));
+		ThirteenOrphans.add(new Tile("g0"));
+		ThirteenOrphans.add(new Tile("_0"));
+		
+		if (hand.getList().containsAll(ThirteenOrphans)) {
+			for(int i = 0 ; i < tileCount.size() ; i++){
 				if(tileCount.get(i) == 2)
 						return true;
 			}
-		}
+		} 
 		
 		return false;
 	}
