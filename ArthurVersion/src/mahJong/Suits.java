@@ -1,5 +1,5 @@
 package mahJong;
-public enum Suits {
+public enum Suits implements Comparable<Suits> {
 		Character('c'),		//0
 		Bamboo('b'), 		//1
 		Dot('d'), 			//2
@@ -46,5 +46,4 @@ public enum Suits {
 		public char getSuit(){
 			return suit;
 		}
-		
 }
