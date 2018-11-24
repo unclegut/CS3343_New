@@ -35,5 +35,7 @@ public class UnitTest_MixSuit {
 		boolean result = mixSuit.checkPattern(hand);
 		assertEquals(false,result);
 	}
+	
+	
 
 }

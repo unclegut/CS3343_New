@@ -10,7 +10,7 @@ import mahJong.Tile;
 public class CommonHand extends HandPattern {
 	
 	public CommonHand() {
-		super(0, "CommonHand");
+		super(1, "CommonHand");
 	}
 
 	public boolean checkPattern(Hand hand) {

@@ -10,7 +10,7 @@ import mahJong.Tile;
 public class SmallDragon extends HandPattern{
 	
 	public SmallDragon() {
-		super(5, "SmallDragon");
+		super(3, "SmallDragon");
 		// TODO Auto-generated constructor stub
 	}
 

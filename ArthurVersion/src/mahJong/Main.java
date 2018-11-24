@@ -35,7 +35,7 @@ public class Main {
 		//Testing section
 		HandChecker hc = HandChecker.getInstance();
 		hc.checkHand(hand);
-		hc.printCheckingResult();
+		hc.calculatePoints();
 		//Testing section
 		
 		scanner.close();

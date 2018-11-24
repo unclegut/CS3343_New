@@ -123,7 +123,7 @@ public class HandChecker {
 
 	}
 	
-	public void printCheckingResult() {
+	public int calculatePoints() {
 		if (!winningHand.isEmpty()) {
 			int points = 0;
 			System.out.println("Hand patterns: ");		
@@ -132,8 +132,11 @@ public class HandChecker {
 				points += hp.getPoint();
 			}
 			System.out.println("\nTotal winning point: " + (points == -1 ? "Maximum" : points));
+			return points;
 		}
-		else
+		else {
 			System.out.println("This hand is a Trick Hand!");
+			return -2;
+			}
 	}
 }
