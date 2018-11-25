@@ -43,7 +43,7 @@ public class Hand {
 				lineCount = 0;
 			}
 		}
-		System.out.println("\n\nIn your hand. ");
+		//System.out.println("\n\nIn your hand. ");
 	}
 	
 }

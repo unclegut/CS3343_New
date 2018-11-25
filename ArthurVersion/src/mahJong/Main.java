@@ -7,7 +7,7 @@ public class Main {
 		char pWind, sWind;
 		String tiles;
 		
-		System.out.println("Hello!");
+		System.out.println("-- MahJong Point Calculator --");
 		//System.out.println("Welcome to Hong Kong MahJong Point Calculator!");
 		Scanner scanner = new Scanner(System.in);
 		
@@ -24,8 +24,12 @@ public class Main {
 		
 		//maybe can do sort here:
 		Arrays.sort(tileStr);// sort the array first 
-		//!! Need Checking here??
 		
+		//Need Checking here
+		Validation v = new Validation();
+		boolean isValid = v.validateHand(tileStr);
+		
+		if(isValid) {
 		Hand hand = new Hand(pWind, sWind, tileStr);
 		
 		hand.printHand();
@@ -37,7 +41,10 @@ public class Main {
 		hc.checkHand(hand);
 		hc.calculatePoints();
 		//Testing section
+		}
+		else System.out.print("Invalid hand.");
 		
 		scanner.close();
+		
 	}
 }
