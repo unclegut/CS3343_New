@@ -178,9 +178,37 @@ public class integrationTest {
 	}
 	
 	@Test
-	public void testAllHonorTiles() { 
-		Hand hand = new Hand('e','e',new String[]{"n0","n0","n0","e0","e0","e0","r0","r0","r0",
-				"g0","g0","g0","_0","_0"}); 
+	public void testSameSuit() { 
+		Hand hand = new Hand('n','n',new String[]{"d1","d1","d1","d2","d3","d4","d5","d5","d5",
+				"d6","d7","d8","d9","d9"}); 
+		
+		HandChecker hc = HandChecker.getInstance();
+		hc.checkHand(hand);
+		
+		int result = hc.calculatePoints();
+		
+		assertEquals(7,result);
+		
+	}
+	
+	@Test
+	public void testGreatDragon() { 
+		Hand hand = new Hand('n','n',new String[]{"r0","r0","r0","g0","g0","g0","_0","_0","_0",
+				"c6","c7","c8","e0","e0"}); 
+		
+		HandChecker hc = HandChecker.getInstance();
+		hc.checkHand(hand);
+		
+		int result = hc.calculatePoints();
+		
+		assertEquals(8,result);
+		
+	}	
+	
+	@Test
+	public void testOnlyOneNine() { 
+		Hand hand = new Hand('n','n',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"c9","c9","c9","b1","b1"}); 
 		
 		HandChecker hc = HandChecker.getInstance();
 		hc.checkHand(hand);
@@ -190,5 +218,49 @@ public class integrationTest {
 		assertEquals(-1,result);
 		
 	}
+	
+	@Test
+	public void testThirteenOrphans() { 
+		Hand hand = new Hand('n','n',new String[]{"c1","c9","b1","b9","d1","d9","n0","e0","s0",
+				"w0","r0","g0","_0","_0"}); 
+		
+		HandChecker hc = HandChecker.getInstance();
+		hc.checkHand(hand);
+		
+		int result = hc.calculatePoints();
+		
+		assertEquals(-1,result);
+		
+	}
+	
+	@Test
+	public void testGreatWinds() { 
+		Hand hand = new Hand('n','n',new String[]{"e0","e0","e0","s0","s0","s0","w0","w0","w0",
+				"n0","n0","n0","c1","c1"}); 
+		
+		HandChecker hc = HandChecker.getInstance();
+		hc.checkHand(hand);
+		
+		int result = hc.calculatePoints();
+		
+		assertEquals(-1,result);
+		
+	}
+	
+	@Test
+	public void testTrickhand() { 
+		Hand hand = new Hand('n','n',new String[]{"c1","c3","c5","c7","c9","b1","b3","b5","b7",
+				"b9","d1","d3","d5","d7"}); 
+		
+		HandChecker hc = HandChecker.getInstance();
+		hc.checkHand(hand);
+		
+		int result = hc.calculatePoints();
+		
+		assertEquals(-2,result);
+		
+	}
+	
+	
 
 }

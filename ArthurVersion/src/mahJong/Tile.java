@@ -61,10 +61,10 @@ public class Tile implements Comparable<Tile>{
 		return a;
 	}
 	
-	@Override
+	/*@Override
 	public String toString() {
 		if(this.suit == Suits.Character || this.suit == Suits.Bamboo || this.suit == Suits.Dot)
 			return String.format("%13s %1s, ", this.getSuit(), this.getRank());
 		else return String.format("%15s, ", this.getSuit());
-	}
+	}*/
 }
