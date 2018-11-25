@@ -28,14 +28,30 @@ public class UnitTest_MixSuit {
 	}
 	
 	@Test
-	public void testMixSuit3() { //²V¤@¦â false
+	public void testMixSuit3() { //true (not inorder)
 		Hand hand = new Hand('e','e',new String[]{"e0","e0","e0","s0","s0","s0","w0","w0","w0",
 				"n0","n0","n0","c1","c1"});
+		MixSuit mixSuit = new MixSuit();
+		boolean result = mixSuit.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testMixSuit4() { //all honor tiles
+		Hand hand = new Hand('e','e',new String[]{"e0","e0","e0","s0","s0","s0","w0","w0","w0",
+				"n0","n0","n0","r0","r0"});
 		MixSuit mixSuit = new MixSuit();
 		boolean result = mixSuit.checkPattern(hand);
 		assertEquals(false,result);
 	}
 	
-	
+	@Test
+	public void testMixSuit5() { //all number (same suit) -> the last return false
+		Hand hand = new Hand('e','e',new String[]{"c1","c2","c3","c4","c5","c6","c7","c8","c9",
+				"c1","c1","c2","c2","c2"});
+		MixSuit mixSuit = new MixSuit();
+		boolean result = mixSuit.checkPattern(hand);
+		assertEquals(false,result);
+	}
 
 }
