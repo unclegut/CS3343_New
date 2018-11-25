@@ -7,7 +7,7 @@ import java.util.TreeSet;
 import mahJong.Hand;
 import mahJong.Tile;
 
-public class CommonHand extends HandPattern {
+public class CommonHand extends HandPatterns {
 	
 	public CommonHand() {
 		super(1, "CommonHand");

@@ -7,7 +7,7 @@ import java.util.HashSet;
 import mahJong.Hand;
 import mahJong.Tile;
 
-public class AllinTriplets extends HandPattern {
+public class AllinTriplets extends HandPatterns {
 	public AllinTriplets() {
 		super(3, "AllinTriplets");
 	}

@@ -7,7 +7,7 @@ import java.util.HashSet;
 import mahJong.Hand;
 import mahJong.Tile;
 
-public class GreatDragon extends HandPattern{
+public class GreatDragon extends HandPatterns{
 	
 	public GreatDragon() {
 		super(5, "GreatDragon");

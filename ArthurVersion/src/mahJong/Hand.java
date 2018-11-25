@@ -1,7 +1,7 @@
 package mahJong;
 import java.util.ArrayList;
 
-import handPattern.HandPattern;
+import handPattern.HandPatterns;
 
 public class Hand {
 	private ArrayList<Tile> tiles;

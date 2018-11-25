@@ -7,7 +7,7 @@ import java.util.HashSet;
 import mahJong.Hand;
 import mahJong.Tile;
 
-public class ThirteenOrphans  extends HandPattern {
+public class ThirteenOrphans  extends HandPatterns {
 	
 	public ThirteenOrphans() {
 		super(-1, "ThirteenOrphans");

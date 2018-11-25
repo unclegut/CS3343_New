@@ -12,7 +12,7 @@ import handPattern.ContainOneNine;
 import handPattern.GreatDragon;
 import handPattern.GreatWinds;
 import handPattern.GreenDragon;
-import handPattern.HandPattern;
+import handPattern.HandPatterns;
 import handPattern.MixSuit;
 import handPattern.OnlyOneNine;
 import handPattern.PrevalentWindTriplet;
@@ -27,12 +27,12 @@ import handPattern.WhiteDragon;
 
 public class HandChecker {
 	private static HandChecker instance = new HandChecker();
-	private ArrayList<HandPattern> handPatterns;
-	private ArrayList<HandPattern> winningHand;
+	private ArrayList<HandPatterns> handPatterns;
+	private ArrayList<HandPatterns> winningHand;
 	private Hand hand;
 
 	private HandChecker() {
-		handPatterns = new ArrayList<HandPattern>();
+		handPatterns = new ArrayList<HandPatterns>();
 		handPatterns.add(new GreatWinds());      // 0 大四喜
 		handPatterns.add(new ThirteenOrphans()); // 1 十三么
 		handPatterns.add(new OnlyOneNine());     // 2 清么九
@@ -73,7 +73,7 @@ public class HandChecker {
 		this.hand = hand;
 		boolean hasDragon = false;
 		boolean hasWind = false;
-		winningHand = new ArrayList<HandPattern>();
+		winningHand = new ArrayList<HandPatterns>();
 
 		if (checkPattern(17)) {
 			for (int i = 14; i < 17; i++)
@@ -114,9 +114,9 @@ public class HandChecker {
 		else
 			checkPattern(1);
 
-		Collections.sort(winningHand, new Comparator<HandPattern>() {
+		Collections.sort(winningHand, new Comparator<HandPatterns>() {
 			@Override
-			public int compare(HandPattern hp1, HandPattern hp2) {
+			public int compare(HandPatterns hp1, HandPatterns hp2) {
 				return ((Integer) hp1.getPoint()).compareTo((Integer) hp2.getPoint());
 			}
 		});
@@ -127,7 +127,7 @@ public class HandChecker {
 		if (!winningHand.isEmpty()) {
 			int points = 0;
 			System.out.println("Hand patterns: ");		
-			for (HandPattern hp : winningHand) {
+			for (HandPatterns hp : winningHand) {
 				System.out.println(hp.toString());
 				points += hp.getPoint();
 			}

@@ -194,7 +194,7 @@ public class integrationTest {
 	@Test
 	public void testGreatDragon() { 
 		Hand hand = new Hand('n','n',new String[]{"r0","r0","r0","g0","g0","g0","_0","_0","_0",
-				"c6","c7","c8","e0","e0"}); 
+				"c1","c2","c3","d1","d1"}); 
 		
 		HandChecker hc = HandChecker.getInstance();
 		hc.checkHand(hand);

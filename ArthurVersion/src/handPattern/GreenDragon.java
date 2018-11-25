@@ -7,7 +7,7 @@ import mahJong.Hand;
 import mahJong.Suits;
 import mahJong.Tile;
 
-public class GreenDragon extends HandPattern{
+public class GreenDragon extends HandPatterns{
 	public GreenDragon() {
 		super(1, "GreenDragon");
 	}

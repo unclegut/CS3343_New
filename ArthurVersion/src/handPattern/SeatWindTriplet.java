@@ -8,7 +8,7 @@ import mahJong.Hand;
 import mahJong.Suits;
 import mahJong.Tile;
 
-public class SeatWindTriplet extends HandPattern{
+public class SeatWindTriplet extends HandPatterns{
 	
 	public SeatWindTriplet() {
 		super(1, "SeatWindTriplet");
