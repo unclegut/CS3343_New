@@ -13,7 +13,7 @@ public class SameSuit extends HandPatterns{
 	@Override
 	public boolean checkPattern(Hand hand){
 		
-		ArrayList<Tile> tileSet = new ArrayList<Tile>(new HashSet<Tile>(hand.getList()));
+		ArrayList<Tile> tileSet = new ArrayList<Tile>(new TreeSet<Tile>(hand.getList()));
 		ArrayList<Integer> tileCount = new ArrayList<Integer>();
 		for(Tile tile:tileSet)
 			tileCount.add(Collections.frequency(hand.getList(), tile)); //count unique element in the set
