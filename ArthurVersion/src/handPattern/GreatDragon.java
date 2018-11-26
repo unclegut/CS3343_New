@@ -7,10 +7,10 @@ import java.util.HashSet;
 import mahJong.Hand;
 import mahJong.Tile;
 
-public class GreatDragon extends HandPattern{
+public class GreatDragon extends HandPatterns{
 	
 	public GreatDragon() {
-		super(8, "GreatDragon");
+		super(5, "GreatDragon");
 		// TODO Auto-generated constructor stub
 	}
 

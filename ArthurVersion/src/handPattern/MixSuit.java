@@ -4,7 +4,7 @@ import java.util.*;
 
 import mahJong.*;
 
-public class MixSuit extends HandPattern {
+public class MixSuit extends HandPatterns {
 
 	public MixSuit() {
 		super(3, "MixSuit");
@@ -30,8 +30,10 @@ public class MixSuit extends HandPattern {
 				break;
 			}
 		}
-		if(checkingSuit==null)return false; //all honor tile
-		
+
+		if (checkingSuit == null)
+			return false; // all honor tile
+
 		for (int i = 0; i < tileSet.size(); i++) {
 			if (tileSet.get(i).getSuitName() != checkingSuit) {
 				if (tileSet.get(i).getRank() != '0')
@@ -39,13 +41,7 @@ public class MixSuit extends HandPattern {
 			}
 		}
 
-		/*if (hand.getList().contains(new Tile("n0")) || hand.getList().contains(new Tile("e0"))
-				|| hand.getList().contains(new Tile("s0")) || hand.getList().contains(new Tile("w0"))
-				|| hand.getList().contains(new Tile("r0")) || hand.getList().contains(new Tile("g0"))
-				|| hand.getList().contains(new Tile("_0"))) {
-			return true;
-		}*/
-
 		return true;
+
 	}
 }

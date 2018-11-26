@@ -50,7 +50,7 @@ public class Tile implements Comparable<Tile>{
 			else
 				return -1;
 		}
-		else if (this.suit.compareTo(another.suit) == 1)
+		else if (this.suit.ordinal() > another.suit.ordinal())
 			return 1;
 		else
 			return -1;

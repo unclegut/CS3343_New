@@ -1,11 +1,9 @@
 package mahJong;
 
-public final class Validation {
+public class Validation {
 	
-	private Validation() {} //without this no-argument constructor, the class will be highlighted
-							//with red color while testing
 
-	public static boolean validateHand(String[] str) {
+	public boolean validateHand(String[] str) {
 		if (str.length != 14) { // length = 14
 			System.out.println("Your hand do not have 14 Tiles!");
 			return false;
@@ -66,7 +64,7 @@ public final class Validation {
 
 	}
 
-	public static boolean validateWind(char wind) {
+	public boolean validateWind(char wind) {
 
 		if (!(wind == 'e' || wind == 's' || wind == 'w' || wind == 'n')) {
 			System.out.println("Wind should be e/s/w/n.");

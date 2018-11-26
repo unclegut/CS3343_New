@@ -8,7 +8,7 @@ import mahJong.Hand;
 import mahJong.Suits;
 import mahJong.Tile;
 
-public class AllHonorTiles extends HandPattern{
+public class AllHonorTiles extends HandPatterns{
 	public AllHonorTiles() {
 		super(-1, "AllHonorTiles");
 	}

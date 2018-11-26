@@ -2,12 +2,12 @@ package handPattern;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import mahJong.Hand;
 import mahJong.Tile;
 
-public class Chicken extends HandPattern {
+public class Chicken extends HandPatterns {
 
 	public Chicken() {
 		super(0, "Chicken");
@@ -17,7 +17,7 @@ public class Chicken extends HandPattern {
 
 		ArrayList<Tile> allTiles = new ArrayList<Tile>(hand.getList());
 		Collections.sort(allTiles);
-		ArrayList<Tile> tileSet = new ArrayList<Tile>(new HashSet<Tile>(hand.getList()));
+		ArrayList<Tile> tileSet = new ArrayList<Tile>(new TreeSet<Tile>(hand.getList()));
 		ArrayList<Integer> tileCount = new ArrayList<Integer>();
 
 		for (Tile tile : tileSet) {

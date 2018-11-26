@@ -7,7 +7,7 @@ import mahJong.Hand;
 import mahJong.Suits;
 import mahJong.Tile;
 
-public class PrevalentWindTriplet extends HandPattern{ //°é­·
+public class PrevalentWindTriplet extends HandPatterns{ //°é­·
 	public PrevalentWindTriplet() { 
 		super(1, "PrevalentWindTriplet");
 	}

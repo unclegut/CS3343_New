@@ -4,7 +4,7 @@ import java.util.*;
 
 import mahJong.*;
 
-public class SameSuit extends HandPattern{
+public class SameSuit extends HandPatterns{
 	
 	public SameSuit() {
 		super(7, "SameSuit");

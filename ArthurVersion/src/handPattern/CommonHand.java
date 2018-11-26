@@ -2,22 +2,22 @@ package handPattern;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import mahJong.Hand;
 import mahJong.Tile;
 
-public class CommonHand extends HandPattern {
+public class CommonHand extends HandPatterns {
 	
 	public CommonHand() {
-		super(0, "CommonHand");
+		super(1, "CommonHand");
 	}
 
 	public boolean checkPattern(Hand hand) {
 		
 		ArrayList<Tile> allTiles = new ArrayList<Tile>(hand.getList());
 		Collections.sort(allTiles);
-		ArrayList<Tile> tileSet = new ArrayList<Tile>(new HashSet<Tile>(hand.getList()));
+		ArrayList<Tile> tileSet = new ArrayList<Tile>(new TreeSet<Tile>(hand.getList()));
 		ArrayList<Integer> tileCount = new ArrayList<Integer>();
 
 		for (Tile tile : tileSet) {

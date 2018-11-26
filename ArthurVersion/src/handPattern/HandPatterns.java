@@ -2,11 +2,11 @@ package handPattern;
 
 import mahJong.Hand;
 
-public abstract class HandPattern {
+public abstract class HandPatterns {
 	private int point;
 	private String name;
 		
-	protected HandPattern(int point, String name) {
+	protected HandPatterns(int point, String name) {
 		this.point = point;
 		this.name = name;
 	}
