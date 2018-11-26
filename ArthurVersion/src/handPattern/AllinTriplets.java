@@ -12,21 +12,23 @@ public class AllinTriplets extends HandPatterns {
 		super(3, "AllinTriplets");
 	}
 
-	public boolean checkPattern(Hand hand){
-		
+	public boolean checkPattern(Hand hand) {
+
 		ArrayList<Tile> tileSet = new ArrayList<Tile>(new HashSet<Tile>(hand.getList()));
-		
+
 		ArrayList<Integer> tileCount = new ArrayList<Integer>();
-		for(Tile tile:tileSet){
-			tileCount.add(Collections.frequency(hand.getList(), tile)); //count unique element 
+		for (Tile tile : tileSet) {
+			tileCount.add(Collections.frequency(hand.getList(), tile)); // count unique element
 		}
-		
-		//Add sort here to make 23333 sequence, only this class need
+
+		// Add sort here to make 23333 sequence, only this class need
 		Collections.sort(tileCount);
-		
-		if(tileCount.get(0) == 2 && tileCount.get(1) == 3 && tileCount.get(2) == 3 && tileCount.get(3) == 3 && tileCount.get(4) == 3)
+
+		if (tileCount.get(0) == 2 && tileCount.get(1) == 3 && tileCount.get(2) == 3 
+				&& tileCount.get(3) == 3 && tileCount.get(4) == 3)
 			return true;
-		
-		else return false;
+
+		else
+			return false;
 	}
 }

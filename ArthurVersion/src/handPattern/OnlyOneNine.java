@@ -22,10 +22,10 @@ public class OnlyOneNine extends HandPatterns {
 		for (Tile tile : tileSet)
 			tileCount.add(Collections.frequency(hand.getList(), tile)); // count unique element
 
-		// DDW <- Must be ddw, else fail
 		Collections.sort(tileCount);
 
-		if (tileCount.get(0) == 2 && tileCount.get(1) == 3 && tileCount.get(2) == 3 && tileCount.get(3) == 3 && tileCount.get(4) == 3) {
+		if (tileCount.get(0) == 2 && tileCount.get(1) == 3 && tileCount.get(2) == 3 
+				&& tileCount.get(3) == 3 && tileCount.get(4) == 3) {
 
 			for (int i = 0; i < tileSet.size(); i++) {
 				if ((tileSet.get(i).getSuit() == Suits.Character || tileSet.get(i).getSuit() == Suits.Bamboo
@@ -35,12 +35,12 @@ public class OnlyOneNine extends HandPatterns {
 							tileSet.get(i).getRank() == '9'))
 						return false; // not 1 or 9
 				} else
-					return false; // not c/b/d
+					return false; // not character/bamboo/dot
 			}
 
 			return true;
 
 		} else
-			return false; // not 對對糊
+			return false; // not 23333 structure of 對對糊
 	}
 }
