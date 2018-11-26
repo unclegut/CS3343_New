@@ -28,9 +28,18 @@ public class UnitTest_MixSuit {
 	}
 	
 	@Test
-	public void testMixSuit3() { //混一色 false
+	public void testMixSuit3() { //混一色 true , not in order(c1 at the last)
 		Hand hand = new Hand('e','e',new String[]{"e0","e0","e0","s0","s0","s0","w0","w0","w0",
 				"n0","n0","n0","c1","c1"});
+		MixSuit mixSuit = new MixSuit();
+		boolean result = mixSuit.checkPattern(hand);
+		assertEquals(true,result);
+	}
+	
+	@Test
+	public void testMixSuit4() { //混一色 false, all honor tiles
+		Hand hand = new Hand('e','e',new String[]{"e0","e0","e0","s0","s0","s0","w0","w0","w0",
+				"n0","n0","n0","_0","_0"});
 		MixSuit mixSuit = new MixSuit();
 		boolean result = mixSuit.checkPattern(hand);
 		assertEquals(false,result);
