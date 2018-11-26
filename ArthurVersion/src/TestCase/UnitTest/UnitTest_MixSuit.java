@@ -45,5 +45,15 @@ public class UnitTest_MixSuit {
 		boolean result = mixSuit.checkPattern(hand);
 		assertEquals(false, result);
 	}
+	
+	@Test
+	public void testMixSuit5() { // ²V¤@¦â false, same suit
+		Hand hand = new Hand('e', 'e',
+				new String[] { "d1","d1","d1","d2","d3","d4","d5","d5","d5",
+						"d6","d7","d8","d9","d9" });
+		MixSuit mixSuit = new MixSuit();
+		boolean result = mixSuit.checkPattern(hand);
+		assertEquals(false, result);
+	}
 
 }

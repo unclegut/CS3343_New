@@ -41,7 +41,13 @@ public class MixSuit extends HandPatterns {
 			}
 		}
 
-		return true;
+		if (hand.getList().contains(new Tile("n0")) || hand.getList().contains(new Tile("e0"))
+				|| hand.getList().contains(new Tile("s0")) || hand.getList().contains(new Tile("w0"))
+				|| hand.getList().contains(new Tile("r0")) || hand.getList().contains(new Tile("g0"))
+				|| hand.getList().contains(new Tile("_0")))
+			return true;
+
+		return false; //same suit
 
 	}
 }

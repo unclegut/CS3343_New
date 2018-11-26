@@ -409,7 +409,7 @@ public class SystemTest {
 		char pWind = 'n';
 		char sWind = 'n';
 		String[] tileStr = { "r0","r0","r0","g0","g0","g0","_0","_0","_0",
-				"c6","c7","c8","e0","e0" };
+				"c6","c7","c8","d1","d1" };
 
 		System.out.println("-- MahJong Point Calculator --\n");
 		System.out.println("Prevalent Wind: (e/s/w/n) : " + pWind + "\n");
