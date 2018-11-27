@@ -17,7 +17,7 @@ public class Main {
 		System.out.println("Seat Wind: (e/s/w/n)");
 		sWind = scanner.nextLine().charAt(0);
 		
-		System.out.println("Tiles in your hand: (e.g. B91)");		
+		System.out.println("Tiles in your hand: (e.g. c1 for Character1, e0 for East Wind, _0 for White Dragon)");		
 		tiles = scanner.nextLine();
 		String[] tileStr = tiles.split("\\s+"); //length must be 14
 		// s = 1 white space, s+ = multiple white space
@@ -30,6 +30,7 @@ public class Main {
 		boolean isValid = v.validateHand(tileStr);
 		
 		if(isValid) {
+		System.out.println("This Hand is Valid! Continue...");
 		Hand hand = new Hand(pWind, sWind, tileStr);
 		
 		hand.printHand();
