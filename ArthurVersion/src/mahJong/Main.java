@@ -12,11 +12,21 @@ public class Main {
 	public static void main(String[] args) {
 		char pWind, sWind;
 		String tiles;
+		System.out.println("Hello! Welcome to");
+		System.out.println("___  ___      _     _                  ______     _       _   _____       _            _       _             \r\n" + 
+				"|  \\/  |     | |   (_)                 | ___ \\   (_)     | | /  __ \\     | |          | |     | |            \r\n" + 
+				"| .  . | __ _| |__  _  ___  _ __   __ _| |_/ /__  _ _ __ | |_| /  \\/ __ _| | ___ _   _| | __ _| |_ ___  _ __ \r\n" + 
+				"| |\\/| |/ _` | '_ \\| |/ _ \\| '_ \\ / _` |  __/ _ \\| | '_ \\| __| |    / _` | |/ __| | | | |/ _` | __/ _ \\| '__|\r\n" + 
+				"| |  | | (_| | | | | | (_) | | | | (_| | | | (_) | | | | | |_| \\__/\\ (_| | | (__| |_| | | (_| | || (_) | |   \r\n" + 
+				"\\_|  |_/\\__,_|_| |_| |\\___/|_| |_|\\__, \\_|  \\___/|_|_| |_|\\__|\\____/\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|   \r\n" + 
+				"                  _/ |             __/ |                                                                     \r\n" + 
+				"                 |__/             |___/                                                                      ");
 		
-		System.out.println("-- MahJong Point Calculator --");
+		
 		//System.out.println("Welcome to Hong Kong MahJong Point Calculator!");
 		Scanner scanner = new Scanner(System.in);
 		
+		System.out.println("Please input:");
 		System.out.println("Prevalent Wind: (e/s/w/n)");
 		pWind = scanner.nextLine().charAt(0);
 		
