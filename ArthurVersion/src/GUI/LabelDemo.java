@@ -19,38 +19,38 @@ public class LabelDemo extends JPanel {
         super(new GridLayout(1,14));  //3 rows, 1 column
         JLabel label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14;
 
-        ImageIcon icon1 = createImageIcon( "image/" + tileStr[0] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon2 = createImageIcon( "image/" + tileStr[1] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon3 = createImageIcon( "image/" + tileStr[2] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon4 = createImageIcon( "image/" + tileStr[3] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon5 = createImageIcon( "image/" + tileStr[4] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon6 = createImageIcon( "image/" + tileStr[5] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon7 = createImageIcon( "image/" + tileStr[6] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon8 = createImageIcon( "image/" + tileStr[7] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon9 = createImageIcon( "image/" + tileStr[8] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon10 = createImageIcon( "image/" + tileStr[9] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon11 = createImageIcon( "image/" + tileStr[10] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon12 = createImageIcon( "image/" + tileStr[11] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon13 = createImageIcon( "image/" + tileStr[12] +".gif", "a pretty but meaningless splat");
-        ImageIcon icon14 = createImageIcon( "image/" + tileStr[13] +".gif", "a pretty but meaningless splat");
+        ImageIcon icon1 = createImageIcon( "image/" + tileStr[0] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon2 = createImageIcon( "image/" + tileStr[1] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon3 = createImageIcon( "image/" + tileStr[2] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon4 = createImageIcon( "image/" + tileStr[3] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon5 = createImageIcon( "image/" + tileStr[4] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon6 = createImageIcon( "image/" + tileStr[5] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon7 = createImageIcon( "image/" + tileStr[6] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon8 = createImageIcon( "image/" + tileStr[7] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon9 = createImageIcon( "image/" + tileStr[8] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon10 = createImageIcon( "image/" + tileStr[9] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon11 = createImageIcon( "image/" + tileStr[10] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon12 = createImageIcon( "image/" + tileStr[11] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon13 = createImageIcon( "image/" + tileStr[12] +".GIF", "a pretty but meaningless splat");
+        ImageIcon icon14 = createImageIcon( "image/" + tileStr[13] +".GIF", "a pretty but meaningless splat");
         
         
         //Create the first label.
         //default: label1 = new JLabel("Image and Text", icon1, JLabel.CENTER);
-        label1 = new JLabel("Image and Text", icon1, JLabel.CENTER);
-        label2 = new JLabel("Image and Text", icon2, JLabel.CENTER);
-        label3 = new JLabel("Image and Text", icon3, JLabel.CENTER);
-        label4 = new JLabel("Image and Text", icon4, JLabel.CENTER);
-        label5 = new JLabel("Image and Text", icon5, JLabel.CENTER);
-        label6 = new JLabel("Image and Text", icon6, JLabel.CENTER);
-        label7 = new JLabel("Image and Text", icon7, JLabel.CENTER);
-        label8 = new JLabel("Image and Text", icon8, JLabel.CENTER);
-        label9 = new JLabel("Image and Text", icon9, JLabel.CENTER);
-        label10 = new JLabel("Image and Text", icon10, JLabel.CENTER);
-        label11 = new JLabel("Image and Text", icon11, JLabel.CENTER);
-        label12 = new JLabel("Image and Text", icon12, JLabel.CENTER);
-        label13 = new JLabel("Image and Text", icon13, JLabel.CENTER);
-        label14 = new JLabel("Image and Text", icon14, JLabel.CENTER);
+        label1 = new JLabel(icon1, JLabel.CENTER);
+        label2 = new JLabel(icon2, JLabel.CENTER);
+        label3 = new JLabel(icon3, JLabel.CENTER);
+        label4 = new JLabel(icon4, JLabel.CENTER);
+        label5 = new JLabel(icon5, JLabel.CENTER);
+        label6 = new JLabel(icon6, JLabel.CENTER);
+        label7 = new JLabel(icon7, JLabel.CENTER);
+        label8 = new JLabel(icon8, JLabel.CENTER);
+        label9 = new JLabel(icon9, JLabel.CENTER);
+        label10 = new JLabel(icon10, JLabel.CENTER);
+        label11 = new JLabel(icon11, JLabel.CENTER);
+        label12 = new JLabel(icon12, JLabel.CENTER);
+        label13 = new JLabel(icon13, JLabel.CENTER);
+        label14 = new JLabel(icon14, JLabel.CENTER);
         
         
 

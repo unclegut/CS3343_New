@@ -49,6 +49,8 @@ public class Main {
 		hc.calculatePoints();
 		//Testing section
 		
+		System.out.println("\nThe hand is printing on a pop up window now...");
+		
 		// Show hand by GUI
         SwingUtilities.invokeLater(new Runnable() { 
             public void run() {
@@ -61,8 +63,7 @@ public class Main {
         // End of GUI
         
 		}
-		else System.out.print("Invalid hand.");
-		
+		else System.out.print("\nInvalid hand.");
 		
 		scanner.close();
 		
