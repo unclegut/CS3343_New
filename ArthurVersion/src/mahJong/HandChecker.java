@@ -126,7 +126,7 @@ public class HandChecker {
 	public int calculatePoints() {
 		if (!winningHand.isEmpty()) {
 			int points = 0;
-			System.out.println("Hand patterns: ");		
+			System.out.println("\n\nHand patterns: ");		
 			for (HandPatterns hp : winningHand) {
 				System.out.println(hp.toString());
 				points += hp.getPoint();
@@ -135,7 +135,7 @@ public class HandChecker {
 			return points;
 		}
 		else {
-			System.out.println("This hand is a Trick Hand!");
+			System.out.println("\nThis hand is a Trick Hand!");
 			return -2;
 			}
 	}

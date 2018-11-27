@@ -1,5 +1,11 @@
 package mahJong;
+
 import java.util.*;
+
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+
+import GUI.LabelDemo;
 
 
 public class Main {
@@ -42,8 +48,21 @@ public class Main {
 		hc.checkHand(hand);
 		hc.calculatePoints();
 		//Testing section
+		
+		// Show hand by GUI
+        SwingUtilities.invokeLater(new Runnable() { 
+            public void run() {
+		//Turn off metal's use of bold fonts
+	        UIManager.put("swing.boldMetal", Boolean.FALSE);
+                
+	        LabelDemo.createAndShowGUI(tileStr);
+            }
+        });
+        // End of GUI
+        
 		}
 		else System.out.print("Invalid hand.");
+		
 		
 		scanner.close();
 		
