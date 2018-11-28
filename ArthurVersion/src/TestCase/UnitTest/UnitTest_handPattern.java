@@ -37,7 +37,7 @@ public class UnitTest_handPattern {
 		String result = greatWinds.toString();
 		assertEquals("GreatWinds Maximum", result);
 	}
-	
+	 
 	
 
 }

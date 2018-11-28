@@ -45,5 +45,5 @@ public class UnitTest_Hand {
 		
 		
 		hand.printHand();
-	}
+	} 
 }

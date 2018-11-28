@@ -44,7 +44,7 @@ public class UnitTest_SeatWindTriplet {
 		boolean result = seatWindTriplet.checkPattern(hand);
 		assertEquals(true,result);
 	}
-	
+	 
 	@Test
 	public void testSeatWindTriplet5() { //false (count!=3)
 		Hand hand = new Hand('n','n',new String[]{"d1","d1","d1","c1","c1","c1","r0","r0","r0",

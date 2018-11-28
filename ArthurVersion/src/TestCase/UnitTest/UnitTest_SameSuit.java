@@ -43,7 +43,7 @@ public class UnitTest_SameSuit {
 		SameSuit sameSuit = new SameSuit();
 		boolean result = sameSuit.checkPattern(hand);
 		assertEquals(false,result);
-	}
+	} 
 	
 	@Test
 	public void testSameSuit5() { //�M�@�� the first suit is not c/b/d

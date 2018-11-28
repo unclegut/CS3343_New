@@ -44,7 +44,7 @@ public class UnitTest_PrevalentWind {
 		PrevalentWindTriplet prevalentWindTriplet = new PrevalentWindTriplet();
 		boolean result = prevalentWindTriplet.checkPattern(hand);
 		assertEquals(true,result);
-	}
+	} 
 	
 	@Test
 	public void testPrevalentWindTriplet5() { //false (count!=3)

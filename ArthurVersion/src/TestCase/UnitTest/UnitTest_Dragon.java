@@ -46,7 +46,7 @@ public class UnitTest_Dragon {
 		boolean result = greenDragon.checkPattern(hand);
 		assertEquals(true,result);
 	}
-	
+	 
 	@Test
 	public void testGreenDragon2() { //µo°] false
 		Hand hand = new Hand('e','e',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",

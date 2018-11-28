@@ -44,5 +44,49 @@ public class UnitTest_SmallDragon {
 		boolean result = smallDragon.checkPattern(hand);
 		assertEquals(false,result);
 	}
+	
+	@Test
+	public void testSmallDragon5() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"g0","_0"});
+		SmallDragon smallDragon = new SmallDragon();
+		boolean result = smallDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	@Test
+	public void testSmallDragon6() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"r0","_0"});
+		SmallDragon smallDragon = new SmallDragon();
+		boolean result = smallDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	@Test
+	public void testSmallDragon7() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"r0","r0","r0","g0","g0","g0","_0","_0","_0",
+				"d1","d1","d2","d2","d2"});
+		SmallDragon smallDragon = new SmallDragon();
+		boolean result = smallDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	@Test
+	public void testSmallDragon8() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"r0","r0","g0","g0","g0","_0","_0"});
+		SmallDragon smallDragon = new SmallDragon();
+		boolean result = smallDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	@Test
+	public void testSmallDragon9() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"r0","r0","r0","g0","g0","_0","_0"});
+		SmallDragon smallDragon = new SmallDragon();
+		boolean result = smallDragon.checkPattern(hand);
+		assertEquals(false,result);
+	} 
+	@Test
+	public void testSmallDragon10() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"r0","r0","g0","g0","_0","_0","_0"});
+		SmallDragon smallDragon = new SmallDragon();
+		boolean result = smallDragon.checkPattern(hand);
+		assertEquals(false,result);
+	}
 
 }

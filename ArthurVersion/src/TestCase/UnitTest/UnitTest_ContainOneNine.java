@@ -53,5 +53,40 @@ public class UnitTest_ContainOneNine {
 		boolean result = containOneNine.checkPattern(hand);
 		assertEquals(false,result);
 	}
+	
+	@Test
+	public void testContainOneNine6() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"c2","c2","c1","c1","b9","b9","d1","d1","d1",
+				"e0","e0","e0","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	@Test
+	public void testContainOneNine7() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1",
+				"e0","e0","e0","e0","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	@Test
+	public void testContainOneNine8() {// Branches case
+		Hand hand = new Hand('e','e',new String[]{"c1","c1","c1","b9","b9","b9","d1","d1","d1","d1",
+				"e0","e0","e0","e0","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	} 
+	@Test
+	public void testContainOneNine9() {// Branches case
+		Hand hand = new Hand('e','e',new String[]{"c1","c1","c1","b9","b9","b9","b9","d1","d1","d1","d1",
+				"e0","e0","e0","e0","_0","_0"});
+		ContainOneNine containOneNine = new ContainOneNine();
+		boolean result = containOneNine.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	
 
 }

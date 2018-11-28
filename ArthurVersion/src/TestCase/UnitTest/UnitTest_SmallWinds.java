@@ -62,5 +62,101 @@ public class UnitTest_SmallWinds {
 		boolean result = smallWinds.checkPattern(hand);
 		assertEquals(false,result);
 	}	
+	
+	@Test
+	public void testSmallWinds7() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","e0","s0"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds8() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"w0","e0","s0"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds9() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"w0","e0","n0"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds10() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"w0","s0","n0"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	
+	@Test
+	public void testSmallWinds11() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","n0","c1","e0","e0","s0","s0","s0","w0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds12() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","n0","e0","e0","e0","c1","s0","s0","w0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds13() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","n0","e0","e0","e0","s0","s0","s0","c1",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds14() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","n0","n0","e0","e0","s0","s0","c1","w0",
+				"w0","w0","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds15() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","n0","n0","e0","e0","s0","s0","s0","w0",
+				"w0","c1","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	
+	@Test
+	public void testSmallWinds16() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","w0",
+				"w0","c1","d2","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
+	 
+	@Test
+	public void testSmallWinds17() { // Branches case
+		Hand hand = new Hand('e','e',new String[]{"n0","n0","n0","e0","e0","e0","s0","s0","s0",
+				"w0","w0","w0","d2","d2"});
+		SmallWinds smallWinds = new SmallWinds();
+		boolean result = smallWinds.checkPattern(hand);
+		assertEquals(false,result);
+	}
 
 }

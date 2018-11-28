@@ -55,7 +55,7 @@ public class UnitTest_Common {
 		boolean result = commonHand.checkPattern(hand);
 		assertEquals(false,result);
 	}
-	
+	 
 	@Test
 	public void testCommonHand6() {		// False: Matches rank, but not match suit
 		Hand hand = new Hand('e','e',new String[]{"c1","c2","c3","c3","c4","c5","c5","c6","c7",

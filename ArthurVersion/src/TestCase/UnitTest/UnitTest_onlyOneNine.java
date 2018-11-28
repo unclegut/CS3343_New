@@ -46,7 +46,7 @@ public class UnitTest_onlyOneNine {
 		OnlyOneNine onlyOneNine = new OnlyOneNine();
 		boolean result = onlyOneNine.checkPattern(hand);
 		assertEquals(false,result);
-	}
+	} 
 	
 	@Test
 	public void testOnlyOneNine5() { // get(1)== false
