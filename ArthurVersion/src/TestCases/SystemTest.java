@@ -1,4 +1,4 @@
-package TestCase.SystemTest;
+package TestCases;
 
 import static org.junit.Assert.*;
 
@@ -25,7 +25,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -34,7 +34,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(0,hc.calculatePoints());
-		}
+		
 
 	}
 
@@ -54,7 +54,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -63,7 +63,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(1,hc.calculatePoints());
-		}
+		
 
 	}
 	
@@ -83,7 +83,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -92,7 +92,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -111,7 +111,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -120,7 +120,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -139,7 +139,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -148,7 +148,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -167,7 +167,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -176,7 +176,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -195,7 +195,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -204,7 +204,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -223,7 +223,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -232,7 +232,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -251,7 +251,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -260,7 +260,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(3,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -279,7 +279,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -288,7 +288,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(3,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -307,7 +307,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -316,7 +316,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(6,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -335,7 +335,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -344,7 +344,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(5,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -363,7 +363,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -372,7 +372,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(9,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -391,7 +391,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -400,7 +400,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(7,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -419,7 +419,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -428,7 +428,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(8,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -447,7 +447,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -456,7 +456,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(-1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -475,7 +475,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -484,7 +484,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(-1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -503,7 +503,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -512,7 +512,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(-1,hc.calculatePoints());
-		}
+		
 	}
 	
 	@Test
@@ -531,7 +531,7 @@ public class SystemTest {
 		boolean isValid = v.validateHand(tileStr);
 		assertEquals(true,isValid);
 		
-		if (isValid) {
+
 			Hand hand = new Hand(pWind, sWind, tileStr);
 			hand.printHand();
 			System.out.println("\n");
@@ -540,7 +540,7 @@ public class SystemTest {
 			hc.checkHand(hand);
 			
 			assertEquals(-2,hc.calculatePoints());
-		}
+		
 	}
 
 }

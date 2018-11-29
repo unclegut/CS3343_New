@@ -1,9 +1,10 @@
-package TestCase.IntegrationTest;
+package TestCases;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import handPattern.AllHonorTiles;
 import mahJong.Hand;
 import mahJong.HandChecker;
 
@@ -259,6 +260,20 @@ public class integrationTest {
 		
 		assertEquals(-2,result);
 		
+	}
+	
+	@Test
+	public void testAllHonorTiles() { //¦r¤@¦â
+		
+		Hand hand = new Hand('n','n',new String[]{"n0","n0","n0","e0","e0","e0","r0","r0","r0",
+				"g0","g0","g0","_0","_0"}); 
+		
+		HandChecker hc = HandChecker.getInstance();
+		hc.checkHand(hand);
+		
+		int result = hc.calculatePoints();
+		
+		assertEquals(-1,result);
 	}
 	
 	

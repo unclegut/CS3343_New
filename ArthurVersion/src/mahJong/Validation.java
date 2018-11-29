@@ -21,7 +21,7 @@ public class Validation {
 				
 				// c,b,d rank
 				if (str[i].charAt(0) == 'c' || str[i].charAt(0) == 'b' || str[i].charAt(0) == 'd') {
-					if (!(str[i].charAt(1) >= '1' && str[i].charAt(1) <= '9')) {
+					if ((str[i].charAt(1) < '1' || str[i].charAt(1) > '9')) {
 						System.out.println("Rank of Character, Bamboo and Dot tile should between 1-9.");
 						System.out.println("Error: " + str[i]);
 						return false;

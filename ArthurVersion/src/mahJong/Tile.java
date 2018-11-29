@@ -23,11 +23,6 @@ public class Tile implements Comparable<Tile>{
 
 	@Override
 	public boolean equals(Object another) {
-       if (another == null)
-    	   return false;
-       
-       if (this.getClass() != another.getClass())
-    	   return false;
        
        Tile anotherTile = (Tile) another;
        
